@@ -1,0 +1,28 @@
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+    <title>Users data</title>
+{% endblock %}
+
+{% block body %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Job</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <th class="text-start" scope="row">{{ user.id + 1 }}</th>
+            <td class="text-start">{{ user.profile["name"] }}</td>
+            <td class="text-start">{{ user.profile["mail"] }}</td>
+            <td class="text-start">{{ user.profile["job"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

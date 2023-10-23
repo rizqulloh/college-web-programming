@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.text-default {
+    color: #dedede;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+
+.navbar-brand {
+    font-weight: 900;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+
+.avatar img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.avatar:hover {
+    border: 2px solid #0d6efd;
+}
+
+#sidebar {
+    width: 20%;
+    padding: 10px;
+    min-height: calc(100vh - 70px);
+}
+
+#sidebar .sidebar-menu {
+    width: 100%;
+    list-style: none;
+    margin: 5px 0;
+}
+
+#sidebar .sidebar-menu li {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+#sidebar .sidebar-menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#content {
+    width: 80%;
+    min-height: calc(100vh - 70px);
+    align-items: center;
+}
